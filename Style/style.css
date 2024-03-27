@@ -12,22 +12,33 @@ a {
 }
 
 body {
-    /* background: rgb(237, 4, 106);
-    background-image: radial-gradient(circle, #020024 0%, #01031b 0%, #3a0333 0%, #01031b 100%);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle, #020024 0%, #01031b 0%, #3a0333 0%, #01031b 100%);
+
 }
 
 .container {
-    width: 100%;
+    max-width: 1550px;
     height: 100%;
-    background-image: radial-gradient(circle, #020024 0%, #01031b 0%, #3a0333 0%, #01031b 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.mom {
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
 }
 
 .card-Profile {
@@ -103,7 +114,7 @@ body {
 
 .link-work:hover {
     background-color: #3a0333;
-    color:#7fff00;
+    color: #7fff00;
     ;
 }
 
@@ -129,7 +140,59 @@ body {
     transition: all 0.2s ease-in-out;
     opacity: 0.4;
 }
+
 .card-footer a li i:hover {
-   opacity: 1;
+    opacity: 1;
     color: #7fff00;
+}
+
+
+@media (max-width:575.98px) {
+    .card-Profile {
+        width: 418px;
+        height: 100%;
+    }
+}
+
+
+@media (max-width:416px) {
+    .card-Profile {
+        width: 354px;
+        height: 100%;
+    }
+
+    .card-footer a li i {
+        padding: 0 6px;
+    }
+}
+
+@media (max-width:300px) {
+    .card-Profile {
+        width: 284px;
+        height: 100%;
+    }
+
+    .card-footer a li i {
+        font-size: 22px;
+        padding: 0 0;
+        gap: 0;
+    }
+
+    .card-footer {
+        margin-top: 0;
+        padding: 4px 0;
+        gap: 47px;
+    }
+
+    .mom {
+        height: 90%;
+    }
+
+    .link-work {
+        padding: 8px 0px;
+    }
+
+    .link-myWork {
+        gap: 7px;
+    }
 }
