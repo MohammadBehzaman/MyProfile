@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;    
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    /* color: #fff; */
+}
+
+body {
+    /* background: rgb(237, 4, 106);
+    background-image: radial-gradient(circle, #020024 0%, #01031b 0%, #3a0333 0%, #01031b 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #020024 0%, #01031b 0%, #3a0333 0%, #01031b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Profile {
+    width: 491px;
+    height: 90%;
+    background-color: rgb(3 1 20 / 66%);
+    border-radius: 15px;
+    padding: 25px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 32px 6px
+}
+
+.card-profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%); */
+
+}
+
+.card-profile-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 30px;
+
+}
+
+.card-profile-title h1 {
+    margin-bottom: 11px;
+    font-size: 26px;
+}
+
+.card-profile-title p {
+    margin-bottom: 12px;
+    color: chartreuse;
+}
+
+.link-myWork {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.link-work {
+    background: #272020a1;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    color: #7f7878;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.link-work:hover {
+    background-color: #3a0333;
+    color: #fff;
+}
