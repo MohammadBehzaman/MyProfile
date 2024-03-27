@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Libre Baskerville", serif;    
+    font-family: "Libre Baskerville", serif;
 }
 
 a {
@@ -76,7 +76,7 @@ body {
 
 .card-profile-title p {
     margin-bottom: 12px;
-    color: chartreuse;
+    color: #7fff00;
 }
 
 .link-myWork {
@@ -103,5 +103,33 @@ body {
 
 .link-work:hover {
     background-color: #3a0333;
+    color:#7fff00;
+    ;
+}
+
+.card-footer {
+    display: flex;
+    gap: 13px;
+    padding: 5px 0px;
     color: #fff;
+    list-style-type: square;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+.card-footer a {
+    font-size: 15px;
+    color: #fff;
+}
+
+.card-footer a li i {
+    font-size: 27px;
+    padding: 0 38px;
+    color: #8a8787d6;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.4;
+}
+.card-footer a li i:hover {
+   opacity: 1;
+    color: #7fff00;
 }
